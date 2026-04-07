@@ -1,59 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" href="./asset/logo.png">
     <title>Spotify - Web Player: Music for everyone</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="main">
-        <div class="sidebar-content">
-            <div class="nav">
-                <div class="nav-option">
-                    <i class="fa-solid fa-house"></i>
-                    <a href="#"> Home</a>
-                </div>
-                <div class="nav-option">
-                    <i class="fa-sharp fa-solid fa-magnifying-glass"></i>
-                    <a href="#">Search</a>
-                </div>
-            </div>
-            <div class="library">
-                <div class="options">
-                    <div class="lib-option">
-                    <img src="./asset/library_icon.png">
-                    <a href="#"> Your Library</a>
-                    <div class="icons"></div>
-                    <i class="fa-solid fa-plus"></i>
-                    <i class="fa-solid fa-arrow-right"></i>
-                </div>
-                </div>
-                <div class="boxes"></div>
 
+<div class="main">
+
+    <!-- Sidebar -->
+    <div class="sidebar-content">
+
+        <!-- NAV -->
+        <div class="nav">
+            <div class="nav-option active">
+                <i class="fa-solid fa-house"></i>
+                <a href="#">Home</a>
+            </div>
+
+            <div class="nav-option">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <a href="#">Search</a>
             </div>
         </div>
-        <div class="main-content">
+
+        <!-- LIBRARY -->
+        <div class="library">
+
+            <div class="options">
+                <div class="lib-option">
+
+                    <div class="lib-left">
+                        <img src="./asset/library_icon.png" width="20" height="20">
+                        <a href="#">Your Library</a>
+                    </div>
+
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Boxes -->
+            <div class="boxes">
+                <div class="box">
+                    <p class="box-p1">Create your first playlist</p>
+                    <p class="box-p2">It's easy, we'll help you</p>
+                    <button>Create Playlist</button>
+                </div>
+
+                <div class="box">
+                    <p class="box-p1">Let's find some podcasts</p>
+                    <p class="box-p2">We'll keep you updated</p>
+                    <button >Browse Podcasts</button>
+                </div>
+            </div>
 
         </div>
-        <div class="music-player">
 
-        </div>
     </div>
 
-</body>
+    <!-- MAIN CONTENT -->
+    <div class="main-content">
 
+        <div class="sticky-nav">
+            <div class="sticky-nav-icons">
+                <i class="fa-solid fa-chevron-left"></i>
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <div class="sticky-nav-optios">
+                <button class="btn">Explore Premium</button>
+                <button class="btn dark" bgcolor="black">Install App</button>
+                <i class="fa-solid fa-user"></i>
+            </div>
+            
+    </div>        
+        </div>
+        </div>
+        <h2>Recently Played</h2>
+
+        <div class="card-container">
+
+            <div class="card">
+                <img src="./assets/card1.jpg">
+                <p class="card-title">Top Hits</p>
+                <p class="card-info">Best songs of the week</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/card2.jpg">
+                <p class="card-title">Chill</p>
+                <p class="card-info">Relax & enjoy</p>
+            </div>
+
+            <div class="card">
+                <img src="./assets/card3.jpg">
+                <p class="card-title">Workout</p>
+                <p class="card-info">Energy boost</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- MUSIC PLAYER -->
+    <div class="music-player">
+
+        <div class="player-left">
+            <img src="./assets/card1.jpg" height="50">
+            <p>Song Name</p>
+        </div>
+
+        <div class="player-center">
+            <i class="fa-solid fa-backward"></i>
+            <i class="fa-solid fa-play"></i>
+            <i class="fa-solid fa-forward"></i>
+        </div>
+
+        <div class="player-right">
+            <i class="fa-solid fa-volume-high"></i>
+        </div>
+
+    </div>
+
+</div>
+
+</body>
 </html>
