@@ -126,13 +126,16 @@ button:hover {
 .music-player {
     position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 100%;              /* align after sidebar */
+    
     height: 70px;
     background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    box-sizing: border-box;
+    border-top: 1px solid #333;
 }
 .sticky-nav{
     position:fixed;
@@ -245,4 +248,26 @@ button {
 }
 body {
     overflow-x: hidden;
+}
+.player-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 25%;
+}
+
+.player-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 50%;
+}
+
+.player-right {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 10px;
+    width: 25%;
 }
