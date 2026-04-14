@@ -271,3 +271,54 @@ body {
     gap: 10px;
     width: 25%;
 }
+.player-center {
+    display: flex;
+    flex-direction: column;   /* 👈 IMPORTANT */
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 50%;
+}
+
+/* Controls (icons) */
+.controls {
+    display: flex;
+    gap: 20px;
+    font-size: 18px;
+}
+
+/* Progress container */
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+/* Time text */
+.time {
+    font-size: 12px;
+    color: #aaa;
+}
+
+/* Progress bar */
+.progress-bar {
+    flex: 1;
+    height: 4px;
+    appearance: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    /* 👇 gradient for progress */
+    background: linear-gradient(to right, #1db954 0%, #1db954 0%, #555 0%, #555 100%);
+}
+
+/* Slider thumb */
+.progress-bar::-webkit-slider-thumb {
+    appearance: none;
+    height: 12px;
+    width: 12px;
+    background: white;
+    border-radius: 50%;
+    cursor: pointer;
+}
