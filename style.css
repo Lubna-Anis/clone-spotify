@@ -94,6 +94,7 @@ button:hover {
     background-color: #121212;
     padding: 20px;
     overflow-y: auto;
+    padding-top: 60px;
 }
 
 /* Cards */
@@ -134,13 +135,17 @@ button:hover {
     padding: 0 20px;
 }
 .sticky-nav{
-    position:sticky;
+    position:fixed;
     top: 0;
+    left: 300px;
+    right: 0;
     background-color: #121212;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 0 0.5rem 0;
+    padding: 0.5rem 2rem ;
+    box-sizing: border-box;
+    z-index: 1000;
 }
 
 
@@ -156,6 +161,10 @@ button:hover {
 
     .card {
         width: 48%;
+    }
+    .sticky-nav {
+        left: 0;
+        right: 0;
     }
     
 }
@@ -223,4 +232,17 @@ button {
 }
 .card, button, .play-btn {
     transition: all 0.3s ease;
+}
+.sticky-nav-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.sticky-nav-options {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+body {
+    overflow-x: hidden;
 }
